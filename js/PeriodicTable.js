@@ -143,7 +143,7 @@ var table = [
 
 					var element = document.createElement( 'div' );
 					element.className = 'element';
-					g.setAttribute("id", i );
+					element.setAttribute("id", i );
 					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
 
 					var number = document.createElement( 'div' );
