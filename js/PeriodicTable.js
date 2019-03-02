@@ -140,16 +140,11 @@ var table = [
 				for ( var i = 0; i < table.length; i ++ ) {
 
 					var item = table[ i ];
-					
-					var link = document.createElement( 'a' );
-					link.className = 'link';
-					link.setAttribute("href", "https://en.wikipedia.org/wiki/" + item[ 1 ]);
 
-					var element = document.createElement( 'div' );
+					var element = document.createElement( 'a' );
 					element.className = 'element';
-					element.setAttribute("id", i );
+					element.setAttribute('href', "https://en.wikipedia.org/wiki/" + item[ 1 ]);
 					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					link.appendChild( element );
 
 					var number = document.createElement( 'div' );
 					number.className = 'number';
