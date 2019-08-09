@@ -21,15 +21,6 @@
 				color: #ffffff;
 			}
 			
-			.wrapper {
-			    min-height: 100%;
-			    position: relative;
-			}
-
-			.content {
-			    padding-bottom: 90%;
-			}
-			
 			#menu {
 				position: absolute;
 				bottom: 20px;
@@ -182,8 +173,6 @@
 		</style>
 	</head>
 	<body>
-	<div class="wrapper">
-    		<div class="content">
 		<script src="js/three.min.js"></script>
 		<script src="js/tween.min.js"></script>
 		<script src="js/controls/TrackballControls.js"></script>
@@ -195,14 +184,13 @@
 			<button id="sphere">SPHERE</button>
 			<button id="helix">HELIX</button>
 			<button id="grid">GRID</button>
+			<button id="footer">More Info</button>
 
 		<script src="js/PeriodicTable.js"></script>
-		</div>
-	</div>
 	</body>
 
 	  <!-- Site footer -->
-	  <footer class="site-footer">
+	  <footer class="site-footer" style="display: none;">
 	      <div class="row">
 		<div class="col-sm-12 col-md-6">
 		  <h6>About</h6>
