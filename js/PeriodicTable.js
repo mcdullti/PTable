@@ -294,6 +294,18 @@ var table = [
 					transform( targets.grid, 2000 );
 
 				}, false );
+				
+				var button = document.getElementById( 'footer' );
+				var footer = document.getElementsByClassName( 'site-footer' );
+				button.addEventListener( 'click', function ( event ) {
+					
+					if (footer.style.display === "none") {
+					    footer.style.display = "block";
+					  } else {
+					    footer.style.display = "none";
+					  }
+					
+				}, false );
 
 				transform( targets.table, 5000 );
 
