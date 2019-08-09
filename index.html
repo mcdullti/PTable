@@ -20,7 +20,15 @@
 			a {
 				color: #ffffff;
 			}
+			
+			.wrapper {
+			    min-height: 100%;
+			    position: relative;
+			}
 
+			.content {
+			    padding-bottom: 100%;
+			}
 			
 			#menu {
 				position: absolute;
@@ -93,6 +101,7 @@
 			.site-footer
 			{
 			  position: relative;
+			  bottom: 0;
 			  background-color:#26272b;
 			  padding:45px 150px 20px;
 			  font-size:15px;
@@ -173,7 +182,8 @@
 		</style>
 	</head>
 	<body>
-
+	<div class="wrapper">
+    		<div class="content">
 		<script src="js/three.min.js"></script>
 		<script src="js/tween.min.js"></script>
 		<script src="js/controls/TrackballControls.js"></script>
@@ -187,10 +197,12 @@
 			<button id="grid">GRID</button>
 
 		<script src="js/PeriodicTable.js"></script>
+		</div>
+	</div>
 	</body>
 
 	  <!-- Site footer -->
-<!-- 	  <footer class="site-footer">
+	  <footer class="site-footer">
 	      <div class="row">
 		<div class="col-sm-12 col-md-6">
 		  <h6>About</h6>
@@ -218,5 +230,5 @@
 		</div>
 	      </div>
 	      <hr>
-	</footer> -->
+	</footer>
 </html>
