@@ -299,10 +299,10 @@ var table = [
 				var footer = document.getElementsByClassName( 'site-footer' );
 				button.addEventListener( 'click', function ( event ) {
 					
-					if (footer.style.display === "none") {
-					    footer.style.display = "block";
+					if (footer[0].style.display === "none") {
+					    footer[0].style.display = "block";
 					  } else {
-					    footer.style.display = "none";
+					    footer[0].style.display = "none";
 					  }
 					
 				}, false );
